@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump Froggy Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Jump Froggy Game</h1>
+        
+        <div id="selections">
+            <input type="text" id="inputArray" placeholder="Enter the array, e.g., 2,3,1,1,4">
+            
+            <!-- Frog Selection -->
+            <label for="frogSelect">Choose a frog:</label>
+            <select id="frogSelect">
+                <option value="🐸">Classic Frog</option>
+                <option value="🦀">Crab</option>
+                <option value="🐍">Snake</option>
+            </select>
+            
+            <!-- Lily Pad Selection -->
+            <label for="lilyPadSelect">Choose a lily pad design:</label>
+            <select id="lilyPadSelect">
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+            </select>
+
+            <button onclick="startGame()">Start Game</button>
+        </div>
+
+        <div id="pond"></div>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
